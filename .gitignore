@@ -1,0 +1,11 @@
+# Java compiled files
+*.class
+
+# Generated application data
+src/*.txt
+
+# VS Code settings
+.vscode/
+
+# macOS
+.DS_Store
