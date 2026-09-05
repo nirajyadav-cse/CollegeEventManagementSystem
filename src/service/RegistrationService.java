@@ -139,5 +139,21 @@ System.out.println("Registration cancelled successfully!");
     throw new RegistrationNotFoundException(
             "Registration with ID " + registrationId + " not found."
     );
+    
 }
+// GENERATE NEXT REGISTRATION ID
+    public int getNextRegistrationId() {
+
+        int maxId = 499;
+
+        for (Registration registration : registrations) {
+
+            if (registration.getRegistrationId() > maxId) {
+                maxId = registration.getRegistrationId();
+            }
+        }
+
+        return maxId + 1;
+    }
+
 }

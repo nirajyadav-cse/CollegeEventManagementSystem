@@ -20,7 +20,8 @@ public class Menu {
     private RegistrationService registrationService =
             new RegistrationService();
 
-    private int nextRegistrationId = 500;
+    private int nextRegistrationId =
+        registrationService.getNextRegistrationId();
 
     // ================================
     // START APPLICATION
